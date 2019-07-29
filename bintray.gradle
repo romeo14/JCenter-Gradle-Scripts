@@ -39,6 +39,7 @@ bintray {
 
     configurations = ['archives']
     pkg {
+        userOrg = properties.getProperty("bintray.orgName")
         repo = bintrayRepo
         name = bintrayName
         desc = libraryDescription
